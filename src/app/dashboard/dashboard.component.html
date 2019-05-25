@@ -1,6 +1,7 @@
 <div class="container">
-    <ul *ngFor="let main of myPosts">
-      <li>{{main.address.geo.lat}}</li>
-    </ul>
+  <div class="list-group" *ngFor="let main of arrays" [routerLink]="['/profile', 'main.id' ]">
+      <a  class="list-group-item list-group-item-action">{{main.title}}</a>
+  </div>
 </div>
+
 

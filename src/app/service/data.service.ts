@@ -13,10 +13,10 @@ api:string;
   }
 
   public getHttp(key): Observable<any>{
-    return this.http.get(this.api + key);
+    return this.http.get(this.api +key);
   }
 
-  public deleteHttp(key): Observable<any>{
-    return this.http.delete(this.api + key);
+  public deleteHttp(): Observable<any>{
+    return this.http.delete(this.api);
   }
 }
