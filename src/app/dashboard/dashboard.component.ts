@@ -13,6 +13,7 @@ arrays:any=[];
   ngOnInit() {
     this.http.getHttp('photos').subscribe((data)=>{
       this.arrays = data.slice(0,5);
+      console.log(this.arrays);
           });
   }
 
